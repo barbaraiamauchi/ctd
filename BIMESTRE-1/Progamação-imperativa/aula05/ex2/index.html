@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cotacao(){
+
+            var nomeDoUsuario = prompt('Qual o seu nome?');
+
+            var quantidadeDolares = prompt('Quantos dólares ele gostaria de cotar?');
+
+            var confirmacaoValor = window.confirm('Voce confirma o valor de: U$' + quantidadeDolares + ' dolares');
+
+            var cotacaoDolarHoje = 5.5;
+
+            if (confirmacaoValor==true){
+                var saudar = alert(`Olá ${nomeDoUsuario}. US$ ${quantidadeDolares} valem R$ ${quantidadeDolares * cotacaoDolarHoje} hoje.`);
+            }
+            else {
+                cotacao();
+            }
+        }
+
+        function referencia(){
+            var redirec = setTimeout(redirecionar, 5000);
+        }
+
+        function redirecionar(){
+            window.location.href = 'https://www.cotacao.com.br/';
+        }
+
+        cotacao();
+        referencia();
+        
+    </script>
+</body>
+</html> 
