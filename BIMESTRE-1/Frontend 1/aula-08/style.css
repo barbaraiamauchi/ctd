@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.titulo-principal{
+    color: blue;
+    font-family:'Roboto', sans-serif;
+}
+
+div {
+    height: 200px;
+    background-image: url('https://2.bp.blogspot.com/-3JyTp4eQOUg/XK5vcSLSi-I/AAAAAAADDo0/fNlgP19wVMMrhkO4iRlgNIFOsLKIyvK8QCLcBGAs/s1600/IMG_3198.jpg');
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    background-position:center ;
+}
+

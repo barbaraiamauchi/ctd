@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    background-color:  #131313;
+}
+
+h1 {
+    color: #fff;
+    font-family:'Roboto', Arial, sans-serif;
+}
+
+h2 {
+    color: steelblue;
+}
+
+p {
+    color: #bdbdbd;
+    font-family:'Roboto', Arial, sans-serif;
+}
+
+a {
+    color: yellow;
+}
+
+.media-picture {
+    height: 400px;
+    width: 100%;
+    background-image: url('https://img.ibxk.com.br/2018/11/29/29161447396167.jpg?w=1120&h=420&mode=crop&scale=both');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.review-score {
+    color: #fff;
+    background-color: #e6bd09;
+    padding: 12px;
+}
+
+/*div {
+    height: 200px;
+    background-image: url('https://2.bp.blogspot.com/-3JyTp4eQOUg/XK5vcSLSi-I/AAAAAAADDo0/fNlgP19wVMMrhkO4iRlgNIFOsLKIyvK8QCLcBGAs/s1600/IMG_3198.jpg');
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    background-position:center ;
+}
+
+font-family:'Roboto', sans-serif;/
