@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09 - Mesa de trabalho</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+
+
+        //array.filter
+        var valoresNumericos = [12, 5, 8, 130, 44];
+
+        var valoresMaioresQueDez = valoresNumericos.filter(function(valor){
+            return valor > 10;
+        });
+        
+        console.log(valoresMaioresQueDez);
+
+
+
+        //array.every();
+        //devolve true e false para a condição - se um valor for false ele devolve false para toda a array
+
+        var valoresNumericos2 = [12, 5, 8, 130, 44];
+
+        var valoresMaioresQueDez2 = valoresNumericos2.every(function(valor){
+            return valor > 10;
+        });
+
+        console.log(valoresMaioresQueDez2);
+
+
+
+        //array.some();
+        //devolve true e false para a condição - se um valor for true ele devolve true para toda a array
+
+        var valoresNumericos3 = [12, 5, 8, 130, 44];
+
+        var valoresMaioresQueDez3 = valoresNumericos3.some(function(valor){
+            return valor > 10;
+        });
+
+        console.log(valoresMaioresQueDez3);
+
+
+
+        //array.map()
+        // primeira forma
+        var numeros = [2, 3, 4, 5, 4, 12, 19, 7, 2, 4, 10, 25, 50, 3, 5];
+
+        var copiarNumeros = numeros.map(function (valor, indice, valorOrigival){
+            return valor;
+        });
+
+        //segunda forma
+        //retorna valores duplicados
+        //1 função que retorna o valor alterado
+        function dobrarValor(valor) {
+            return valor *2;
+        }
+
+        var valoresDobrados = numeros.map(dobrarValor);
+
+        console.log(valoresDobrados);
+
+    </script>
+</body>
+</html>

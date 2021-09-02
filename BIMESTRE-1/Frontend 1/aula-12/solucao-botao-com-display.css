@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500;700&family=Urbanist:ital,wght@0,400;0,700;1,500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+h1, h2, h3 {
+    color:#003000;
+    font-family: 'Kaisei Opti', serif;
+
+}
+
+p {
+    font-family: 'Urbanist', sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+    margin: 0px;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 24px 16px 0px;
+    font-weight: 500;
+}
+
+.header {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 2px 6px #00000020;
+    display: inline-block;
+    padding: 16px 32px;
+    position: fixed;
+    top: 0px;
+}
+
+.logo {
+    height: 40px;
+    float: left;
+}
+
+.menu-item {
+    margin-left: 32px;
+    margin-top: 9px;
+    display: block;
+    float: left;
+}
+
+.banner-topo{
+    height: fit-content;
+    background-image: url('https://cdn.apartmenttherapy.info/image/upload/v1607018911/at/art/design/2020-12/pattern%20of%20the%20year/Promo/POTY_2021_3000x2000.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    margin-top: 72px;
+}
+
+.texto-banner {
+    background-color: #e0ffe9c4;
+    padding: 32px;
+    text-align: center;
+}
+
+.btn {
+    padding: 16px 32px;
+    margin-top: 32px;
+    border-radius: 8px;
+    color: white;
+    background-color: darkgreen;
+    border: none;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    background-color: #003000;
+}
+
+.produtos-container {
+    padding: 32px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.produto {
+    width: 30%;
+    margin: 32px 16px 0px 16px;
+    background-color: rgb(211 236 216);
+    float: left;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.img-produto{
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.produto .btn{
+    width: 100%;
+}
+
+.texto-banner .btn{
+    width: 20%;
+}
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    overflow: hidden;
+    background-color: #004a04;
+    padding: 8px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 3px rgb(0 0 0 / 50%);
+    color: cornsilk;
+}
+
+.img-whats {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    object-fit: cover;
+    float: left;
+}
+
+.btn-whatsapp p{
+    float: left;
+    margin-left: 8px;
+    width: 70%;
+    display: none;
+    text-align: center;
+}
+
+.btn-whatsapp:hover p{
+    display: block;
+}
