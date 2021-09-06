@@ -12,11 +12,13 @@ body {
 h1, h2, h3 {
     color:#003000;
     font-family: 'Kaisei Opti', serif;
+    margin-top: 16px;
 
 }
 
 p {
     font-family: 'Urbanist', sans-serif;
+    margin-top: 8px;
 }
 
 h1 {
@@ -28,6 +30,12 @@ h1 {
 h2 {
     margin: 24px 16px 0px;
     font-weight: 500;
+}
+
+a {
+    font-family: 'Urbanist', sans-serif;
+    color:#003000;
+    text-decoration: none;
 }
 
 .header {
@@ -50,6 +58,12 @@ h2 {
     margin-top: 9px;
     display: block;
     float: left;
+    width: 120px;
+    text-align: center;
+}
+
+.menu-item:hover {
+    font-weight: 700;
 }
 
 .banner-topo{
@@ -92,13 +106,36 @@ h2 {
     box-sizing: border-box;
 }
 
+.banner-container {
+    padding: 0px 32px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
 .produto {
     width: 30%;
     margin: 32px 16px 0px 16px;
     background-color: rgb(211 236 216);
     float: left;
-    padding: 16px;
+    padding: 32px 32px;
     box-sizing: border-box;
+    border-radius: 12px;
+    border: 1px solid  rgb(211 236 216);
+}
+
+.produto:hover{
+    transition: all 0.3s ease-in-out;
+    border: 1px solid  #99c499;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner-fim {
+    margin: 0px 16px;
+    background-color: rgb(211 236 216);
+    padding: 32px 32px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 1px solid  rgb(211 236 216);
 }
 
 .img-produto{
@@ -113,6 +150,10 @@ h2 {
 
 .texto-banner .btn{
     width: 20%;
+}
+
+.banner-fim .btn{
+    width: 30%;
 }
 
 .btn-whatsapp{
