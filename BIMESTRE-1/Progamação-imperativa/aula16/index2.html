@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Trabalho - Objetos literais parte I, JSON</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        /*
+            Atividade I: Crie um Objeto Literal
+            Vamos simular informações gerais de uma conta bancária. 
+            Para isso deve-se basear nos seguintes recursos:
+            (  ) Nome completo do usuário.
+            (  ) Número da Agência.
+            (  ) Número da Conta.
+            (  ) Saldo Atual.
+            (  ) Depósito.
+            (  ) Saque.
+        */
+
+        var dadosDaConta = {
+            nome: 'Willian',
+            sobrenome: 'Sant Anna',
+            numeroDaAgencia: 2909,
+            numeroDaConta: 49090,
+            saldoAtual: 21400,
+            depositar: function(valor) {
+                this.saldoAtual = this.saldoAtual+valor;
+                return `Agora seu Saldo Atual é de R$ ${this.saldoAtual}.`;
+            },
+            sacar: function(valor) {
+                let saldoParcial = this.saldoAtual-valor;
+
+                if (saldoParcial<0){
+                    return console.log(`Saldo insuficiente! Seu Saldo Atual é de R$ ${this.saldoAtual}`);
+                }
+                else {
+                    this.saldoAtual=saldoParcial;
+                    return console.log(`Você realizou um saque de R$ ${valor}. Agora seu Saldo Atual é de R$ ${this.saldoAtual}`);
+                }
+            },
+            nomeCompleto: function() {
+                return this.nome + " " + this.sobrenome;
+            }
+        }
+
+        var json = JSON.stringify(dadosDaConta);
+        console.log('----------------');
+        console.log('Valor convertido em JSON:', json);
+
+
+        /*
+            Atividade II: Adicione funcionalidades ao Objeto Literal.
+            (  ) O usuário deve ser capaz de visualizar seu Saldo Atual.
+            (  ) O usuário deve ser capaz de Depositar. Após o depósito o sistema deve informar o Saldo Atual atualizado.
+            (  ) O usuário deve ser capaz de Sacar. Após o saque o sistema deve informar o Saldo Atual atualizado.
+            (  ) O usuário não pode ser capaz de sacar mais do que possui de Saldo. se não possui saldo o sistema deve responder uma mensagem de erro.
+            Sujestões de mensagem:
+            - Agora seu Saldo Atual é de R$ X.
+            - Você realizou um saque de R$ X. Agora seu Saldo Atual é de R$ X.
+            - Saldo insuficiente! Seu Saldo Atual é de R$ ${this.saldoAtual}.
+        */
+
+        /*
+            Atividade III: Converta os valores em texto JSON
+            (  ) Converta o resultado o objeto literal em JSON.
+        */
+
+    </script>
+</body>
+</html>

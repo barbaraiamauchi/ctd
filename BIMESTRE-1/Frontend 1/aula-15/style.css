@@ -1,0 +1,54 @@
+.botao:enabled {
+    padding: 16px 32px;
+    background-color: cadetblue;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.botao:hover {
+    padding: 16px 32px;
+    background-color: rgb(0, 247, 255);
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.botao:disabled {
+    padding: 16px 32px;
+    background-color: #777777;
+}
+
+.botao:disabled:hover {
+    top: 0px;
+    left: 0px;
+}
+
+.letra-capitular::first-letter{
+    font-size: 52px;
+    color: cadetblue;
+}
+
+.campo-texto{
+    outline: none;
+    padding: 8px 16px;
+    border: 1px solid #2e2e2e;
+}
+
+.campo-texto:focus{
+    border: 1px solid #08533f;
+    background-color: rgb(125, 202, 202);
+}
+
+
+.checkbox-teste:checked{
+    width: 24px;
+    height: 24px;
+}
+
+p:nth-child(3) {
+    color: blueviolet;
+}
+
