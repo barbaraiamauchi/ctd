@@ -11,7 +11,7 @@
     Obs.: Crie um módulo chamado operações.js contendo as funções de callback.
 
     Atividade II: Crie uma função para resetar a calculadora.
-    (  ) A função deve ser capaz de zerar o valor acumulado.
+    ( X ) A função deve ser capaz de zerar o valor acumulado.
     (  ) Crie a documentação da função utilizando JavaDoc.
 
     Atividade Bônus: Crie uma função para guardar as operações matemáticas
