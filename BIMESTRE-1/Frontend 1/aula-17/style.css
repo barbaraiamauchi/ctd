@@ -1,54 +1,32 @@
-.bola {
-    width: 300px;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 24px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main section {
     height: 300px;
-    border-radius: 50%;
-    background-color: rgb(22, 43, 43);
-    animation-name: bola-move;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    width: 300px;
 }
 
-@keyframes bola-move {
-    0% {
-        transform: translateX(200px);
-        opacity: 0%;
-    }
-
-    50% {
-        transform: translateX(0px);
-        background-color: aqua;
-        opacity: 100%;
-    }
-
-    100% {
-        transform: translateX(200px);
-        opacity: 0%;
-    }
+main section:nth-child(1){
+    background-color: rgb(113, 207, 207);
 }
 
-.sorvete{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+main section:nth-child(2){
+    background-color: rgb(196, 109, 109);
 }
 
-.sorvete:hover{
-    transform: scale(4);
-    transform: skew(180deg,30deg);
-
-}
-
-.container{
-    padding: 64px;
-}
-
-button {
-    padding: 16px 32px;
-    background-color: aqua;
-    transition: background-color 1s ease-in-out;
-}
-
-button:hover {
-    background-color: blue;
+main section:nth-child(3){
+    background-color: rgb(169, 101, 196);
 }
